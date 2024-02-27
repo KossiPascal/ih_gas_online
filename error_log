@@ -1,0 +1,44 @@
+[20-Feb-2024 18:19:00 UTC] PHP Fatal error:  Out of memory (allocated 183857152 bytes) (tried to allocate 8192 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/PoolOptimizer.php on line 341
+[20-Feb-2024 18:19:27 UTC] PHP Fatal error:  Out of memory (allocated 183857152 bytes) (tried to allocate 20480 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/DefaultPolicy.php on line 88
+[20-Feb-2024 18:19:44 UTC] PHP Fatal error:  Out of memory (allocated 183857152 bytes) (tried to allocate 20480 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/DefaultPolicy.php on line 77
+[20-Feb-2024 23:04:59 UTC] PHP Fatal error:  Out of memory (allocated 183857152 bytes) (tried to allocate 12288 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/DefaultPolicy.php on line 88
+[20-Feb-2024 23:15:33 UTC] PHP Fatal error:  Out of memory (allocated 183857152 bytes) (tried to allocate 8192 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/DefaultPolicy.php on line 88
+[21-Feb-2024 08:27:05 UTC] PHP Warning:  Unknown: Failed to open stream: No such file or directory in Unknown on line 0
+[21-Feb-2024 08:27:05 UTC] PHP Fatal error:  Failed opening required '.' (include_path='.:/usr/local/apps/php83/lib/php') in Unknown on line 0
+[21-Feb-2024 08:27:07 UTC] PHP Warning:  Unknown: Failed to open stream: No such file or directory in Unknown on line 0
+[21-Feb-2024 08:27:07 UTC] PHP Fatal error:  Failed opening required '.' (include_path='.:/usr/local/apps/php83/lib/php') in Unknown on line 0
+[21-Feb-2024 08:27:35 UTC] PHP Warning:  Unknown: Failed to open stream: No such file or directory in Unknown on line 0
+[21-Feb-2024 08:27:35 UTC] PHP Fatal error:  Failed opening required '.' (include_path='.:/usr/local/apps/php83/lib/php') in Unknown on line 0
+[21-Feb-2024 08:27:37 UTC] PHP Warning:  Unknown: Failed to open stream: No such file or directory in Unknown on line 0
+[21-Feb-2024 08:27:37 UTC] PHP Fatal error:  Failed opening required '.' (include_path='.:/usr/local/apps/php83/lib/php') in Unknown on line 0
+[21-Feb-2024 18:58:29 UTC] PHP Fatal error:  Uncaught ErrorException: include(/home/afrikdigital/public_html/ihgas/vendor/composer/../nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php): Failed to open stream: No such file or directory in /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php:576
+Stack trace:
+#0 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(270): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(/home/a...', '/home/afrikdigi...', 576)
+#1 /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(/home/a...', '/home/afrikdigi...', 576)
+#2 /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php(576): include('/home/afrikdigi...')
+#3 /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/home/afrikdigi...')
+#4 /home/afrikdigital/public_html/ihgas/vendor/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php(54): Composer\Autoload\ClassLoader->loadClass('NunoMaduro\\Coll...')
+#5 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Container/Container.php(885): NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider->NunoMaduro\Collision\Adapters\Laravel\{closure}(Object(Illuminate\Foundation\Application), Array)
+#6 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#7 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\Container\Container->resolve('NunoMaduro\\Coll...', Array, true)
+#8 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\Foundation\Application->resolve('NunoMaduro\\Coll...', Array)
+#9 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->make('NunoMaduro\\Coll...', Array)
+#10 /home/afrikdigital/public_html/ihgas/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(66): Illuminate\Foundation\Application->make('NunoMaduro\\Coll...')
+#11 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(222): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->renderForConsole(Object(Symfony\Component\Console\Output\ConsoleOutput), Object(ErrorException))
+#12 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(204): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#13 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(270): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#14 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#15 {main}
+  thrown in /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php on line 576
+[21-Feb-2024 18:58:29 UTC] PHP Fatal error:  Uncaught ErrorException: include(/home/afrikdigital/public_html/ihgas/vendor/composer/../symfony/error-handler/Error/FatalError.php): Failed to open stream: No such file or directory in /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php:576
+Stack trace:
+#0 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(270): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(/home/a...', '/home/afrikdigi...', 576)
+#1 /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(/home/a...', '/home/afrikdigi...', 576)
+#2 /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php(576): include('/home/afrikdigi...')
+#3 /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/home/afrikdigi...')
+#4 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(259): Composer\Autoload\ClassLoader->loadClass('Symfony\\Compone...')
+#5 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(246): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalErrorFromPhpError(Array, 0)
+#6 /home/afrikdigital/public_html/ihgas/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(270): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#7 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#8 {main}
+  thrown in /home/afrikdigital/public_html/ihgas/vendor/composer/ClassLoader.php on line 576

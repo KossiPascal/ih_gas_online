@@ -1,0 +1,59 @@
+.contour_div{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    padding: 2px;
+    margin: 0px;
+}
+
+.contour_table{
+    background-color: #ffffff;
+}
+.conteneur {
+    width: 960px;
+    -webkit-columns: 3 auto;
+    -moz-columns: 3 auto;
+    columns: 3 auto;
+}
+
+
+.bleu_fonce {
+    color: #08588d;
+}
+
+.jaune {
+    color: #d1d73f;
+}
+
+.violet {
+    color: #e92676;
+}
+
+.bleu_clair {
+    color: #27a5de;
+}
+
+.noir {
+    color: #000000;
+}
+
+.alert-danger {
+    animation: blink 1s infinite;
+}
+.inline {
+    display: inline;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
