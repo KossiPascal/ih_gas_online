@@ -3,3 +3,5 @@ sudo systemctl start ih_gas_online
 sudo systemctl enable ih_gas_online
 sudo systemctl status ih_gas_online
 sudo systemctl daemon-reload
+
+git clone https://github.com/KossiPascal/ih_gas_online.git
