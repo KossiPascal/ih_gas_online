@@ -194,7 +194,7 @@
                             </a>
                             @endcan
                         </li>
-            
+
                         <li class="nav-item ml-4">
                             @can('manage-action', ['transfert','lister'])
                             <a href="{{route('tr.index')}}" class="nav-link">
@@ -293,10 +293,10 @@
                             </a>
                         </li>
                         @endcan
-                    </ul>    
+                    </ul>
                 </li>
                 @endcan
-                
+
                 <!-- @can('manage-action', ['menu','si']) -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
@@ -431,7 +431,7 @@
                         <i class="nav-icon fa fa-file-invoice"></i>
                         <p class="text">{{__('messages.ESPACE ADMINISTRATION')}}</p>
                     </a>
-                @endcan    
+                @endcan
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">

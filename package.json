@@ -1,7 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "start": "composer update && composer install && php artisan config:cache && php artisan cache:clear && php artisan serve --host=localhost --port=2024",
+        "install": "composer update && composer install",
+        "start": "php artisan config:cache && php artisan cache:clear && php artisan serve --host=localhost --port=2024",
         "git_push": "git status && git add . && git status && git commit -m \"Initial Commit\" && git status && git push -u origin main && git status",
         "dev": "npm run development",
         "development": "mix",
