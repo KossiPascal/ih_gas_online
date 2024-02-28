@@ -65,7 +65,12 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                @if(Auth::check() && Auth::user()->profile_picture)
+                    <img src="{{ asset(Auth::user()->profile_picture) }}" class="img-circle elevation-2" alt="User Picture">
+                @else
+                    <!-- Default image if user doesn't have a profile picture -->
+                    <img src="{{ asset('images/default_icon.png') }}" class="img-circle elevation-2" alt="User Picture">
+                @endif
             </div>
             <div class="info">
                 {{Auth::user()->name}}

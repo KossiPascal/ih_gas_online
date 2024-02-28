@@ -1,9 +1,10 @@
 {
     "private": true,
     "scripts": {
-        "install": "composer update && composer install",
+        "update": "composer update",
+        "install": "ln -s ../.env ./ && composer install",
         "start": "php artisan config:cache && php artisan cache:clear && php artisan serve --host=localhost --port=2024",
-        "git_push": "git status && git add . && git status && git commit -m \"Initial Commit\" && git status && git push -u origin main && git status",
+        "git": "git status && git add . && git status && git commit -m \"Initial Commit\" && git status && git push -u origin main && git status",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
